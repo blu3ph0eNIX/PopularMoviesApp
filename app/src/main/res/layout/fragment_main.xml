@@ -9,13 +9,15 @@
     tools:showIn="@layout/activity_main"
     tools:context=".MainActivityFragment">
 
-    <!--<GridView-->
-        <!--android:id="@+id/gridView_movieGrid"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"/>-->
-    <ListView
-        android:id="@+id/listView_flavor"
+    <GridView
+        android:id="@+id/gridView_movieGrid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="@dimen/fragment_vertical_spacing"
+        android:horizontalSpacing="@dimen/fragment_horizontal_spacing"
+        android:stretchMode="columnWidth"
+        android:gravity="center" />
 
 </FrameLayout>
